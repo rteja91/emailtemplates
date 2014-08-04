@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>CloudFuze</title>
+        
+    <style type="text/css">
+        #outlook a{
+            padding:0;
+        }
+        body{
+            width:100% !important;
+        }
+        .ReadMsgBody{
+            width:100%;
+        }
+        .ExternalClass{
+            width:100%;
+        }
+        body{
+            -webkit-text-size-adjust:none;
+        }
+        body{
+            margin:0;
+            padding:0;
+        }
+        img{
+            border:0;
+            height:auto;
+            line-height:100%;
+            outline:none;
+            text-decoration:none;
+        }
+        table td{
+            border-collapse:collapse;
+        }
+        #backgroundTable{
+            height:100% !important;
+            margin:0;
+            padding:0;
+            width:100% !important;
+        }
+    /*
+    @tab Page
+    @section heading 1
+    @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+    @style heading 1
+    */
+        h1,.h1{
+            /*@editable*/color:#363636;
+            display:block;
+            /*@editable*/font-family:Helvetica;
+            /*@editable*/font-size:32px;
+            /*@editable*/font-weight:normal;
+            /*@editable*/letter-spacing:normal;
+            /*@editable*/line-height:100%;
+            margin-top:0;
+            margin-right:0;
+            margin-bottom:10px;
+            margin-left:0;
+            /*@editable*/text-align:left;
+        }
+    /*
+    @tab Page
+    @section heading 2
+    @tip Set the styling for all second-level headings in your emails.
+    @style heading 2
+    */
+        h2,.h2{
+            /*@editable*/color:#543680;
+            display:block;
+            /*@editable*/font-family:Helvetica;
+            /*@editable*/font-size:40px;
+            /*@editable*/font-weight:normal;
+            /*@editable*/line-height:100%;
+            margin-top:0;
+            margin-right:0;
+            margin-bottom:10px;
+            margin-left:0;
+            /*@editable*/text-align:left;
+        }
+    /*
+    @tab Page
+    @section heading 3
+    @tip Set the styling for all third-level headings in your emails.
+    @style heading 3
+    */
+        h3,.h3{
+            /*@editable*/color:#363636;
+            display:block;
+            /*@editable*/font-family:Helvetica;
+            /*@editable*/font-size:16px;
+            /*@editable*/font-weight:bold;
+            /*@editable*/line-height:100%;
+            margin-top:0;
+            margin-right:0;
+            margin-bottom:10px;
+            margin-left:0;
+            /*@editable*/text-align:left;
+        }
+    /*
+    @tab Page
+    @section heading 4
+    @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
+    @style heading 4
+    */
+        h4,.h4{
+            /*@editable*/color:#26ABE2;
+            display:block;
+            /*@editable*/font-family:Helvetica;
+            /*@editable*/font-size:14px;
+            /*@editable*/font-weight:normal;
+            /*@editable*/line-height:100%;
+            margin-top:0;
+            margin-right:0;
+            margin-bottom:10px;
+            margin-left:0;
+            /*@editable*/text-align:left;
+        }
+    /*
+    @tab Header
+    @section preheader style
+    @tip Set the background color for your email's preheader area.
+    @theme page
+    */
+        #templatePreheader{
+            /*@editable*/background-color:#FFFFFF;
+        }
+    /*
+    @tab Header
+    @section preheader text
+    @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
+    */
+        .preheaderContent{
+            /*@editable*/color:#707070;
+            /*@editable*/font-family:Helvetica;
+            /*@editable*/font-size:11px;
+            /*@editable*/line-height:100%;
+            /*@editable*/text-align:left;
+        }
+    /*
+    @tab Header
+    @section preheader link
+    @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
+    */
+        .preheaderContent a:link,.preheaderContent a:visited,.preheaderContent a .yshortcuts {
+            /*@editable*/color:#26ABE2;
+            /*@editable*/font-weight:normal;
+            /*@editable*/text-decoration:none;
+        }
+    /*
+    @tab Header
+    @section header style
+    @tip Set the background color for your email's header area.
+    @theme header
+    */
+        #templateHeader{
+            /*@editable*/background-color:#EEEEEE;
+        }
+    /*
+    @tab Header
+    @section header text
+    @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
+    */
+        .headerContent{
+            /*@editable*/color:#363636;
+            /*@editable*/font-family:Helvetica;
+            /*@editable*/font-size:20px;
+            /*@editable*/font-weight:bold;
+            /*@editable*/line-height:100%;
+            /*@editable*/text-align:left;
+            /*@editable*/vertical-align:top;
+        }
+    /*
+    @tab Header
+    @section header link
+    @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
+    */
+        .headerContent a:link,.headerContent a:visited,.headerContent a .yshortcuts {
+            /*@editable*/color:#26ABE2;
+            /*@editable*/font-weight:normal;
+            /*@editable*/text-decoration:underline;
+        }
+        #headerImage{
+            height:auto;
+            max-width:600px;
+        }
+    /*
+    @tab Body
+    @section body style
+    @tip Set the background color for your email's body area.
+    */
+        #templateBody{
+            /*@editable*/background-color:#EEEEEE;
+        }
+    /*
+    @tab Body
+    @section coupon style
+    @tip Set the background color and border for your email's coupon area.
+    */
+        .couponBlock{
+            /*@editable*/background-color:#ffffff;
+            /*@editable*/border:1px solid #E5E5E5;
+        }
+    /*
+    @tab Body
+    @section coupon text
+    @tip Set the styling for your email's coupon content text. Choose a size and color that is easy to read.
+    @theme main
+    */
+        .couponContent{
+            /*@editable*/color:#505050;
+            /*@editable*/font-family:Helvetica;
+            /*@editable*/font-size:12px;
+            /*@editable*/line-height:150%;
+            /*@editable*/text-align:left;
+        }
+    /*
+    @tab Body
+    @section coupon link
+    @tip Set the styling for your email's coupon content links. Choose a color that helps them stand out from your text.
+    */
+        .couponContent a:link,.couponContent a:visited,.couponContent a .yshortcuts {
+            /*@editable*/color:#26ABE2;
+            /*@editable*/font-weight:bold;
+            /*@editable*/text-decoration:none;
+        }
+        .bodyContent img,.couponContent img{
+            display:inline;
+            height:auto;
+        }
+    /*
+    @tab Footer
+    @section footer style
+    @tip Set the background color and top border for your email's footer area.
+    @theme page
+    */
+        body,#backgroundTable{
+            /*@editable*/background-color:#363636;
+        }
+    /*
+    @tab Footer
+    @section footer style
+    @tip Set the background color and top border for your email's footer area.
+    */
+        #templateFooter{
+            /*@editable*/border-top:0;
+        }
+    /*
+    @tab Footer
+    @section footer text
+    @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
+    @theme footer
+    */
+        .footerContent{
+            /*@editable*/color:#909090;
+            /*@editable*/font-family:Helvetica;
+            /*@editable*/font-size:11px;
+            /*@editable*/line-height:125%;
+            /*@editable*/text-align:left;
+        }
+    /*
+    @tab Footer
+    @section footer link
+    @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
+    */
+        .footerContent a:link,.footerContent a:visited,.footerContent a .yshortcuts {
+            /*@editable*/color:#BBBBBB;
+            /*@editable*/font-weight:normal;
+            /*@editable*/text-decoration:none;
+        }
+        .footerContent img{
+            display:inline;
+        }
+        #monkeyRewards img{
+            max-width:180px;
+        }
+</style></head>
+    <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+        <center>
+
+        <!-- // Header \\ -->
+        <!-- <table border="0" cellpadding="40" cellspacing="0" width="100%" id="templateHeader">
+        <tr>
+                                <td align="center" valign="top" style="padding-bottom:20px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="560">
+                                        <tr>
+                                            <td class="headerContent">
+                                                <img src="http://gallery.mailchimp.com/3b92e2c23663c43b9ddcf4f64/images/3da8aad6-2c04-4d91-8349-6b8c13b83a5f.png" id="headerImage campaign-icon" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext style="max-width:560px;">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table> -->
+                        <!-- // Header \\ -->
+
+                        <!-- // Body \\ -->
+                        <table border="0" cellpadding="20" cellspacing="0" width="100%" id="templateBody">
+                            <tr>
+                                <td align="center" valign="top">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="80%">
+                                        
+                                        <tr mc:repeatable>
+                                            <td align="center" colspan="2" style="padding-bottom:40px;">
+                                                <table border="0" cellpadding="20" cellspacing="0"  class="couponBlock" align="center">
+                                                    <tr>
+                                                        <td align="left" valign="top">
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="80%" align="center">
+                                                                <tr>
+                                                                    <td colspan="2" valign="top" width="80%" style="padding-right:20px;" class="couponContent" mc:edit="coupon_overview">
+                                                                    
+                                                                    </td>
+                                                                    <td valign="top" width="20%">
+                                                                        <img src="http://gallery.mailchimp.com/3b92e2c23663c43b9ddcf4f64/images/3da8aad6-2c04-4d91-8349-6b8c13b83a5f.png" alt="Access, share, manage files from multiple clouds from one place"/>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="padding-top:0;">
+                                                            <table border="0" cellpadding="0" cellspacing="0" width="80%" align="center">
+                                                                <tr>
+                                                                    <td> Hi User, </td>
+                                                                    
+                                                                </tr>
+                                                                <tr><td></td></tr>
+                                                                
+                                                                <tr>
+                                                        <td style="padding-top:10px;">
+                                                           This email is confirmation that your CloudFuze account subscription has been cancelled on <span style="color:#024a5b; font-size: 17px; font-weight: 600"> Sunday, August 31, 2014</span>
+                                                        </td>
+                                                    </tr >
+                                                    <tr style="padding-top:10px; color:#024a5b; font-size: 17px; font-weight: 600"> <td style="padding-top:10px;">Subscription Type : <span> Monthly recurring</span></td></tr>
+                                                    
+                                                            <tr>
+                                                                    <td style="padding-top: 10px;">
+                                                                       Your account subscription will expire on<span style="color:#024a5b; font-size: 17px; font-weight: 600"> Sunday, August 31, 2014</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="padding-top: 10px;">
+                                                                       
+                                                                Please help us improve our product by taking a short 2-minute survey <a href="#link" style="color:#2bb5d8;"> here</span>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                   <tr>
+                                                      <td> 
+                                                          <table border="0" cellpadding="0" cellspacing="0" width="80%" align="center">
+                                                               
+                                                                
+                                                                 <tr>
+                                                                    <td style="padding-top: 10px;"> Thanks for choosing CloudFuze!</td>
+                                                                </tr>
+                                                                <tr >
+                                                                    <td style="padding-top: 10px;">-------------------------</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td style="padding-top: 10px;"> CloudFuze Team</td>                                                                    
+                                                                </tr>
+                                                                  <tr>
+                                                                    <td style="padding-top: 10px;"> for any assistance reach us at <b style="color:#2bb5d8"> <a href="mailto:support@cloudfuze.com" style="color:#2bb5d8;text-decoration: none;">support@cloudfuze.com</a> </b></td>                                                                    
+                                                                </tr>
+                                                            </table>
+                                                     </td> 
+                                                   </tr>
+                                                   <tr bgcolor="#024a5b">
+                                                       <td>
+                                                           <table border="0" cellpadding="0" cellspacing="0" width="80%" align="center">
+                                                                <tr>
+                                                                    <td align="center">
+                                                                        <a href="mailto:support@cloudfuze.com" style="color:white; text-decoration: none; font-size: 14pt"> Support </a>
+                                                                    </td>
+                                                                
+                                                                    <td align="center">
+                                                                        <a href="#" style="color:white; text-decoration: none; font-size: 14pt"> Help</a>
+                                                                    </td>
+                                                                
+                                                                    <td align="center">
+                                                                        <a href="#" style="color:white; text-decoration: none; font-size: 14pt" >Contact us</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                       </td>
+                                                   </tr>
+                                                </table>
+                                                                                                
+                                                <!-- <img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/coupon_shadow_b.png" height="15" width="560" style="display:block;"> -->
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- // Body \\ -->
+
+                   
+        
+            
+        </center>
+    </body>
+</html>
